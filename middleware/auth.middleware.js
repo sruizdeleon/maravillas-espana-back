@@ -2,6 +2,13 @@ const jwt = require("jsonwebtoken")
 const User = require("../models/user.model")
 require("dotenv").config();
 
+/**
+ * En este middleware comprobaremos si hay token de usuario, se verifica y decodifica, y con la información decodificada buscamos si existe el usuario con ese id
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ * @returns nos devuelve un mensaje de error en el caso de que no haya token o no sea valido, o la funcion next() en caso de que todo sea correcto.
+ */
 async function estaAutenticado(req, res, next) {
   try {
     const token = req.query.token;
@@ -23,6 +30,13 @@ async function estaAutenticado(req, res, next) {
   }
 }
 
+/**
+ * En este middleware comprobaremos si hay token de usuario, se verifica y decodifica, y con la información decodificada buscamos si existe el usuario con ese id y si tiene un rol de administrador.
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ * @returns nos devuelve un mensaje de error en el caso de que no haya token, no sea valido, o no sea administrado. Nos devolverá la funcion next() en caso de que todo lo anterior sea correcto.
+ */
 async function esAdmin(req, res, next){
   try{
     const token = req.query.token

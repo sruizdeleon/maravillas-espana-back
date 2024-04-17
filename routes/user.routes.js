@@ -14,6 +14,10 @@ const {
 const {esAdmin} = require("../middleware/auth.middleware");
 const {pwdIguales} = require ("../middleware/usuario.middleware")
 
+
+/**
+ * Ruta para buscar usuarios a través de la query "?email="
+ */
 router.get("/", /* esAdmin, */ async (req, res) => {
   try {
     const usuariosEncontrados = await buscarUsuarios(req.query.email);
@@ -25,6 +29,10 @@ router.get("/", /* esAdmin, */ async (req, res) => {
   }
 });
 
+
+/**
+ * Ruta para registrar un usuario
+ */
 router.post("/registrar", pwdIguales, async (req, res) => {
   try {
     const usuarioRegistrado = await registrar(req.body);
@@ -35,7 +43,7 @@ router.post("/registrar", pwdIguales, async (req, res) => {
 });
 
 /*
- * Esta ruta servirá para iniciar sesión del usuario, y la cuál devolverá un token y un rol para poder acceder
+ * Esta ruta servirá para iniciar sesión del usuario, y la cuál devolverá un token, un rol, nombre de usuario y su id
  */
 router.post("/login", async (req, res) => {
   try {
