@@ -13,30 +13,52 @@ conts = {
 const {esAdmin, estaAutenticado} = require("../middleware/auth. middleware");
 const { buscarValoracionesActividad } = require("../controllers/rating.controllers");
 
-router.get("/", /* estaAutenticado, */ async (req,res) => {
-  try{
-    const valoracionesDeActividadEncontradas = await buscarValoracionesActividad(req.query.actividadId);
-    const valoracionesDeUsuarioEncontradas = await buscarMisValoraciones(req.query.usuario);
 
-    return res.json({msg: "estas son las valoraciones de la actividad: ", valoracionesDeActividadEncontradas, valoracionesDeUsuarioEncontradas});
-  } catch (error){
-    return res
-    .status(500)
-    .json({ msg: "error interno del servidor" });
-  } 
-})
+/**
+ * Esta ruta busca las valoraciones de las actividades con la query "?actividadId=", o mediante la query de "?usuario=", que sería el id del usuario aunque el controlador nos devuelva exclusivamente los atributos solicitados del usuario con ese id.
+ */
+router.get(
+  "/",
+  /* estaAutenticado, */ async (req, res) => {
+    try {
+      const valoracionesDeActividadEncontradas =
+        await buscarValoracionesActividad(req.query.actividadId);
+      const valoracionesDeUsuarioEncontradas = await buscarMisValoraciones(
+        req.query.usuario
+      );
+      return res.json({
+        msg: "estas son las valoraciones encontradas: ",
+        valoracionesDeActividadEncontradas,
+        valoracionesDeUsuarioEncontradas,
+      });
+    } catch (error) {
+      return res.status(500).json({ msg: "error interno del servidor" });
+    }
+  }
+);
 
-router.get("/:id", /* estaAutenticado, */ async (req,res) => {
-  try{
-    const valoracionEncontrada = await buscarValoracionPorId(req.params.id)
-    return res.json({msg: "esta es la valoracion de la actividad: ", valoracionEncontrada});
-  } catch (error){
-    return res
-    .status(500)
-    .json({ msg: "error interno del servidor" });
-  } 
-})
+/**
+ * Esta ruta encuentra la valoración que corresponda a dicho parámetro id.
+ */
 
+router.get(
+  "/:id",
+  /* estaAutenticado, */ async (req, res) => {
+    try {
+      const valoracionEncontrada = await buscarValoracionPorId(req.params.id);
+      return res.json({
+        msg: "esta es la valoracion de la actividad: ",
+        valoracionEncontrada,
+      });
+    } catch (error) {
+      return res.status(500).json({ msg: "error interno del servidor" });
+    }
+  }
+);
+
+/**
+ * Esta ruta se usa para crear una nueva valoración
+ */
 router.post("/", /* estaAutenticado, */  async(req, res)=>{
   try{
     const valoracion = await añadirValoracion(req.body)
@@ -48,6 +70,9 @@ router.post("/", /* estaAutenticado, */  async(req, res)=>{
   } 
 })
 
+/**
+ * Esta ruta se usa para borrar la valoración cuyo id viene en el parámetro
+ */
 router.delete("/:id", /*esAdmin,*/ async(req, res)=>{
   try{
     const valoracionBorrada = await borrarValoracion(req.params.id)
