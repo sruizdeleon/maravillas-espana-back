@@ -1,5 +1,11 @@
 const Actividad = require("../models/activity.model");
 
+/**
+ * 
+ * @param {*} provinciaId 
+ * @param {*} comunidad 
+ * @returns Dependiendo de si se introduce provinciaId, la query de comunidad, o nada, nos devolverá actividadesPorProvincia, actividadesPorComunidad o todasLasActividades
+ */
 async function buscarActividadesPorProvinciaIdOComunidad(provinciaId, comunidad) {
   if(provinciaId){
     const actividadesPorProvincia = await Actividad.find({provinciaId: provinciaId})
@@ -13,11 +19,21 @@ async function buscarActividadesPorProvinciaIdOComunidad(provinciaId, comunidad)
   }
 }
 
+/**
+ * 
+ * @param {*} id 
+ * @returns devuelve la actividad que corresponde a dicho id
+ */
 async function buscarActividadPorId(id) {
     const actividad = await Actividad.findById(id);
     return actividad;
 }
 
+/**
+ * 
+ * @param {*} actividad 
+ * @returns devuelve la nueva Actividad
+ */
 async function crearActividad(actividad) {
   const nuevaActividad = new Actividad({
     nombre: actividad.nombre,
@@ -31,11 +47,22 @@ async function crearActividad(actividad) {
   return nuevaActividad;
 }
 
+/**
+ * 
+ * @param {*} id 
+ * @returns deveulve la actividad borrada que tenía ese id
+ */
 async function borrarActividadPorId(id) {
   const actividadBorrada = await Actividad.findByIdAndDelete(id);
   return actividadBorrada;
 }
 
+/**
+ * 
+ * @param {*} id 
+ * @param {*} actividad 
+ * @returns devuelve la actividad de dicho id con las modificaciones
+ */
 async function cambiarActividad(id, actividad) {
     const modificacionActividad = {
       nombre: actividad.nombre,
