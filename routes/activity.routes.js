@@ -12,7 +12,7 @@ const { estaAutenticado, esAdmin} = require("../middleware/auth.middleware");
 router.get("/", /* estaAutenticado, */ async (req, res) => {
   try {
     const actividadesEncontradas = await buscarActividadesPorProvinciaIdOComunidad(req.query.provinciaId, req.query.comunidad);
-    return res.json({mdg: "actividades encontradas:", actividadesEncontradas});
+    return res.json({msg: "actividades encontradas:", actividadesEncontradas});
   } catch (error) {
     console.log(error);
     return res
@@ -23,8 +23,8 @@ router.get("/", /* estaAutenticado, */ async (req, res) => {
 
 router.get("/:id", /* estaAutenticado, */ async (req, res) => {
   try {
-    const usuarioEncontrado = await buscarActividadPorId(req.params.id);
-    return res.json({msg:"actividad encontrado", usuarioEncontrado})
+    const actividadEncontrada = await buscarActividadPorId(req.params.id);
+    return res.json({msg:"actividad encontrado", actividadEncontrada})
   } catch (error) {
     console.log(error);
     return res
