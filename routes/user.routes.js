@@ -61,6 +61,8 @@ router.post("/login", async (req, res) => {
           msg: "logeado correctamente",
           token: token,
           role: usuarioEncontrado.role,
+          nombre: usuarioEncontrado.name,
+          usuarioId: usuarioEncontrado._id
         });
       }
     }
