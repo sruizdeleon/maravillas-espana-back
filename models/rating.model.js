@@ -4,7 +4,7 @@ const ratingSchema = new mongoose.Schema({
   actividadId: { type: String, required: true },
   usuario: {
     type: mongoose.Types.ObjectId,
-    ref: "valoraciones",
+    ref: "users",
     required: true,
   },
   valoracion: { type: Number, required: true },

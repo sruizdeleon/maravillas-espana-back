@@ -8,11 +8,9 @@ conts = {
   añadirValoracion,
   borrarValoracion,
   
-} = require("..controllers/rating.controller")
+} = require("../controllers/rating.controller")
 
-const {esAdmin, estaAutenticado} = require("../middleware/auth. middleware");
-const { buscarValoracionesActividad } = require("../controllers/rating.controllers");
-
+const {esAdmin, estaAutenticado} = require("../middleware/auth.middleware");
 
 /**
  * Esta ruta busca las valoraciones de las actividades con la query "?actividadId=", o mediante la query de "?usuario=", que sería el id del usuario aunque el controlador nos devuelva exclusivamente los atributos solicitados del usuario con ese id.
@@ -83,3 +81,5 @@ router.delete("/:id", /*esAdmin,*/ async(req, res)=>{
     .json({ msg: "error interno del servidor" });
   } 
 })
+
+module.exports = router;

@@ -1,4 +1,4 @@
-const Valoracion = require("../models/activity.model");
+const Valoracion = require("../models/rating.model");
 
 /**
  * 
