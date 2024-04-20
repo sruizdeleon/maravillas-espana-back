@@ -1,6 +1,6 @@
 const Actividad = require("../models/activity.model");
 
-async function buscarActividadesPorProvinciaOComunidad(proId, comunidad) {
+async function buscarActividadesPorTipoProvinciaOComunidad(tipo,proId, comunidad) {
   if(proId){
     console.log(proId)
     const actividadesPorProvincia = await Actividad.find({provincia: proId})
@@ -10,6 +10,10 @@ async function buscarActividadesPorProvinciaOComunidad(proId, comunidad) {
     const actividadesPorComunidad = await Actividad.find({comunidad: comunidad})
     .populate("provincia", "nombre");
     return actividadesPorComunidad
+  } else if (tipo) {
+    const actividadesPorTipo = await Actividad.find({tipo: tipo})
+    .populate("provincia", "nombre");
+    return actividadesPorTipo
   } else {
     const todasLasActividades = await Actividad.find()
     .populate("provincia", "nombre");;
@@ -59,7 +63,7 @@ async function cambiarActividad(id, actividad) {
 }
 
 module.exports = {
-    buscarActividadesPorProvinciaOComunidad,
+    buscarActividadesPorTipoProvinciaOComunidad,
     buscarActividadPorId,
     crearActividad,
     borrarActividadPorId,

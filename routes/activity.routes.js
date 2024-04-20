@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const {
-  buscarActividadesPorProvinciaOComunidad,
+  buscarActividadesPorTipoProvinciaOComunidad,
   buscarActividadPorId,
   crearActividad,
   borrarActividadPorId,
@@ -11,7 +11,7 @@ const { estaAutenticado, esAdmin} = require("../middleware/auth.middleware");
 
 router.get("/", /* estaAutenticado, */ async (req, res) => {
   try {
-    const actividadesEncontradas = await buscarActividadesPorProvinciaOComunidad(req.query.provincia, req.query.comunidad);
+    const actividadesEncontradas = await buscarActividadesPorTipoProvinciaOComunidad(req.query.tipo, req.query.provincia, req.query.comunidad);
     return res.json({msg: "actividades encontradas:", actividadesEncontradas});
   } catch (error) {
     console.log(error);
