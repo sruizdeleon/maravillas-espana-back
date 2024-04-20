@@ -5,4 +5,4 @@ const provinceSchema = new mongoose.Schema({
     imagenBandera: {type: String, required: true},
 })
 
-module.exports = mongoose.model("provincias", provinceSchema)
+module.exports = mongoose.model("provincias", provinceSchema) 
