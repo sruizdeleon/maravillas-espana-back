@@ -3,18 +3,22 @@ const Actividad = require("../models/activity.model");
 async function buscarActividadesPorProvinciaIdOComunidad(provinciaId, comunidad) {
   if(provinciaId){
     const actividadesPorProvincia = await Actividad.find({provinciaId: provinciaId})
+    .populate("provinciaId", "nombre");
     return actividadesPorProvincia
   } else if (comunidad) {
     const actividadesPorComunidad = await Actividad.find({comunidad: comunidad})
+    .populate("provinciaId", "nombre");
     return actividadesPorComunidad
   } else {
-    const todasLasActividades = await Actividad.find();
+    const todasLasActividades = await Actividad.find()
+    .populate("provinciaId", "nombre");;
     return todasLasActividades
   }
 }
 
 async function buscarActividadPorId(id) {
-    const actividad = await Actividad.findById(id);
+    const actividad = await Actividad.findById(id)
+    .populate("provinciaId", "nombre");;
     return actividad;
 }
 
