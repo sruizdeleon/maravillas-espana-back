@@ -1,23 +1,20 @@
 const Actividad = require("../models/activity.model");
 
-/**
- * 
- * @param {*} provinciaId 
- * @param {*} comunidad 
- * @returns Dependiendo de si se introduce provinciaId, la query de comunidad, o nada, nos devolverá actividadesPorProvincia, actividadesPorComunidad o todasLasActividades
- */
-async function buscarActividadesPorProvinciaIdOComunidad(provinciaId, comunidad) {
-  if(provinciaId){
-    const actividadesPorProvincia = await Actividad.find({provinciaId: provinciaId})
-    .populate("provinciaId", "nombre");
+
+async function buscarActividadesPorProvinciaOComunidad(proId, comunidad) {
+  if(proId){
+    console.log(proId)
+    const actividadesPorProvincia = await Actividad.find({provincia: proId})
+    .populate("provincia", "nombre");
+
     return actividadesPorProvincia
   } else if (comunidad) {
     const actividadesPorComunidad = await Actividad.find({comunidad: comunidad})
-    .populate("provinciaId", "nombre");
+    .populate("provincia", "nombre");
     return actividadesPorComunidad
   } else {
     const todasLasActividades = await Actividad.find()
-    .populate("provinciaId", "nombre");;
+    .populate("provincia", "nombre");;
     return todasLasActividades
   }
 }
@@ -29,7 +26,7 @@ async function buscarActividadesPorProvinciaIdOComunidad(provinciaId, comunidad)
  */
 async function buscarActividadPorId(id) {
     const actividad = await Actividad.findById(id)
-    .populate("provinciaId", "nombre");;
+    .populate("provincia", "nombre");;
     return actividad;
 }
 
@@ -43,7 +40,7 @@ async function crearActividad(actividad) {
     nombre: actividad.nombre,
     img: actividad.img,
     descripcion: actividad.descripcion,
-    provinciaId: actividad.provinciaId,
+    provincia: actividad.provincia,
     comunidad: actividad.comunidad,
     tipo: actividad.tipo
   })  
@@ -72,7 +69,7 @@ async function cambiarActividad(id, actividad) {
       nombre: actividad.nombre,
       img: actividad.img,
       descripcion: actividad.descripcion,
-      provinciaId: actividad.provinciaId,
+      provincia: actividad.provincia,
       comunidad: actividad.comunidad,
       tipo: actividad.tipo,
     };
@@ -85,7 +82,7 @@ async function cambiarActividad(id, actividad) {
 }
 
 module.exports = {
-    buscarActividadesPorProvinciaIdOComunidad,
+    buscarActividadesPorProvinciaOComunidad,
     buscarActividadPorId,
     crearActividad,
     borrarActividadPorId,

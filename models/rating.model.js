@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const ratingSchema = new mongoose.Schema({
-  actividadId: {
+  actividad: {
     type: mongoose.Types.ObjectId,
     ref: "actividades",
     required: true,
