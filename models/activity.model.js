@@ -4,7 +4,7 @@ const actividadSchema = new mongoose.Schema({
     nombre: {type: String, required: true},
     img: {type: String, required: true},
     descripcion: {type: String, required: false},
-    provinciaId: {
+    provincia: {
         type: mongoose.Types.ObjectId,
         ref: "provincias",
         required: true,
