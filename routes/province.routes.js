@@ -10,6 +10,9 @@ const {
 } = require("../controllers/province.controller")
 const { estaAutenticado, esAdmin} = require("../middleware/auth.middleware");
 
+/**
+ * Ruta a la que introducimos la query "?nombre=" para buscar los datos de provincia por nombre. Se necesita estar autenticado para esta acción.
+ */
 router.get("/", /* estaAutenticado, */ async (req, res) => {
     try{
         const provinciasEncontradas = await buscarProvinciasYPorNombre (req.query.nombre);
@@ -19,6 +22,9 @@ router.get("/", /* estaAutenticado, */ async (req, res) => {
     }
 })
 
+/**
+ * Ruta que no devuelve la provincia con ese id de parámetro. Se necesita estar autenticado para esta acción.
+ */
 router.get("/:id", /* estaAutenticado,*/ async (req, res) => {
     try{
         const provinciaEncontrada = await buscarProvinciaPorId(req.params.id)
@@ -28,6 +34,9 @@ router.get("/:id", /* estaAutenticado,*/ async (req, res) => {
     }
 })
 
+/**
+ * Ruta para crear una nueva provincia. Necesita ser administrador para llevar a cabo esta acción.
+ */
 router.post("/", /* esAdmin, */ async (req, res) => {
     try{
         const provinciaCreada = await crearProvincia(req.body);
@@ -37,6 +46,9 @@ router.post("/", /* esAdmin, */ async (req, res) => {
     }
 })
 
+/**
+ * Ruta para modificar provincia. Necesita ser administrador para llevar a cabo esta acción.
+ */
 router.put("/:id", /* es Admin. */ async (req, res) => {
     try {
       const provinciaModificada = await modificarProvincia(req.params.id, req.body);
@@ -48,6 +60,9 @@ router.put("/:id", /* es Admin. */ async (req, res) => {
     }
 })
 
+/**
+ * Ruta para borrar provincia. Necesita ser administrador para llevar a cabo esta acción.
+ */
 router.delete("/:id", /* esAdmin, */ async (req, res) => {
     try{
         const provinciaBorrada = await borrarProvinciaPorId(req.params.id)
