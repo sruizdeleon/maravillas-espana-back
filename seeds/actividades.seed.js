@@ -2568,10 +2568,10 @@ const arrayActividades =[
   },
   {
     "provincia": "661cd30987583e7ca0fca3a1",
-    "nombre": "https://i.postimg.cc/g0GfsL11/Hoz-del-Hu-car.jpg",
+    "nombre": "Recorre la Hoz del Huéca",
     "descripcion": "Recorre la Hoz del Huécar en Cuenca, un impresionante cañón fluvial formado por el río Huécar. Realiza rutas de senderismo y admira los acantilados y la vegetación de este paraje natural.",
     "tipo": "rural",
-    "img": "hoz_huecar_cuenca.jpg",
+    "img": "https://i.postimg.cc/g0GfsL11/Hoz-del-Hu-car.jpg",
     "comunidad": "Castilla-La Mancha"
   },
   {
@@ -3636,6 +3636,150 @@ const arrayActividades =[
     "descripcion": "Adéntrate en la Serra de Tramuntana en Mallorca, una impresionante sierra declarada Patrimonio de la Humanidad por la UNESCO.",
     "provincia": "661cd39087583e7ca0fca3c3",
     "comunidad": "Islas Baleares",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Playa de Las Canteras",
+    "img": "https://i.postimg.cc/4dkMY9QV/Playa-de-Las-Canteras.jpg",
+    "descripcion": "Relájate en la Playa de Las Canteras en Gran Canaria, una de las playas urbanas más famosas de España. Disfruta del sol, el mar y las vistas al famoso Arrecife de Las Canteras.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Parque Santa Catalina",
+    "img": "https://i.postimg.cc/R0nyCRKv/Parque-Santa-Catalina.jpg",
+    "descripcion": "Pasea por el Parque Santa Catalina en Las Palmas de Gran Canaria, un lugar vibrante con eventos culturales, mercados y una amplia variedad de restaurantes y cafés.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Puerto de Mogán",
+    "img": "https://i.postimg.cc/4x0jTMK8/Puerto-de-Mog-n.jpg",
+    "descripcion": "Visita el encantador Puerto de Mogán en Gran Canaria, conocido como 'la pequeña Venecia' por sus canales y pintorescas casas blancas. Disfruta de los restaurantes y tiendas locales.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Catedral de Santa Ana",
+    "img": "https://i.postimg.cc/FHzw8mKd/Catedral-de-Santa-Ana.jpg",
+    "descripcion": "Explora la Catedral de Santa Ana en Las Palmas de Gran Canaria, una impresionante iglesia de estilo gótico que es uno de los principales puntos de interés de la ciudad.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Roque Nublo",
+    "img": "https://i.postimg.cc/4xr7hf7p/Roque-Nublo.jpg",
+    "descripcion": "Sube al Roque Nublo en Gran Canaria, un impresionante monolito de origen volcánico que ofrece unas vistas panorámicas espectaculares de la isla. Es un lugar ideal para los amantes del senderismo y la naturaleza.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Dunas de Maspalomas",
+    "img": "https://i.postimg.cc/SN1zk7mT/Dunas-de-Maspalomas.jpg",
+    "descripcion": "Descubre las Dunas de Maspalomas en Gran Canaria, un impresionante paisaje natural de dunas doradas junto al mar. Este espacio protegido es perfecto para caminar y disfrutar de la naturaleza.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Caldera de Taburiente",
+    "img": "https://i.postimg.cc/L8qgXYXH/Caldera-de-Taburiente.jpg",
+    "descripcion": "Adéntrate en la Caldera de Taburiente en La Palma, una impresionante formación geológica con paisajes espectaculares y rutas de senderismo. Es uno de los lugares más emblemáticos de las Islas Canarias.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Barranco de Guayadeque",
+    "img": "https://i.postimg.cc/5N2FhkWQ/Barranco-de-Guayadeque.jpg",
+    "descripcion": "Visita el Barranco de Guayadeque en Gran Canaria, un hermoso barranco lleno de vegetación y cuevas naturales. Es un lugar perfecto para realizar senderismo y descubrir la biodiversidad de la isla.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Mirador del Río en Lanzarote",
+    "img": "https://i.postimg.cc/NG4HPvSw/Mirador-del-R-o-en-Lanzarote.jpg",
+    "descripcion": "Disfruta de las impresionantes vistas desde el Mirador del Río en Lanzarote, un mirador situado en un acantilado con vistas panorámicas de La Graciosa y el Archipiélago Chinijo.",
+    "provincia": "661cd38487583e7ca0fca3c1",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Plaza de España",
+    "img": "https://i.postimg.cc/FKHX857f/Plaza-de-Espa-a.jpg",
+    "descripcion": "Visita la Plaza de España en Santa Cruz de Tenerife, el corazón de la ciudad donde podrás admirar la arquitectura moderna y disfrutar de las fuentes y jardines.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Auditorio de Tenerife",
+    "img": "https://i.postimg.cc/YqBKkmvB/Auditorio-de-Tenerife.jpg",
+    "descripcion": "Explora el impresionante Auditorio de Tenerife, una obra maestra de la arquitectura moderna diseñada por Santiago Calatrava. Disfruta de eventos culturales y conciertos.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Mercado de Nuestra Señora de África",
+    "img": "https://i.postimg.cc/NMWhKKbT/Mercado-de-Nuestra-Se-ora-de-frica.jpg",
+    "descripcion": "Visita el Mercado de Nuestra Señora de África en Santa Cruz de Tenerife, un mercado tradicional donde podrás comprar productos locales y degustar la gastronomía canaria.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Museo de la Naturaleza y el Hombre",
+    "img": "https://i.postimg.cc/q7DHdb31/Museo-de-la-Naturaleza-y-el-Hombre.jpg",
+    "descripcion": "Visita el Museo de la Naturaleza y el Hombre en Santa Cruz de Tenerife, donde podrás conocer la historia natural y cultural de las Islas Canarias.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "ciudad"
+  },
+  {
+    "nombre": "Parque Nacional del Teide",
+    "img": "https://i.postimg.cc/xjzDWPTP/Parque-Nacional-del-Teide.jpg",
+    "descripcion": "Descubre el Parque Nacional del Teide en Tenerife, un impresionante paisaje volcánico dominado por el Teide, el pico más alto de España. Realiza senderismo y disfruta de las vistas panorámicas.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Bosque de Anaga",
+    "img": "https://i.postimg.cc/4ytDVXF0/Bosque-de-Anaga.jpg",
+    "descripcion": "Adéntrate en el Bosque de Anaga en Tenerife, una reserva natural con impresionantes paisajes de montaña, senderos de senderismo y una rica biodiversidad.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Acantilados de Los Gigantes",
+    "img": "https://i.postimg.cc/X7KMv75G/Acantilados-de-Los-Gigantes.jpg",
+    "descripcion": "Visita los Acantilados de Los Gigantes en Tenerife, unos impresionantes acantilados que se elevan sobre el mar. Disfruta de las vistas panorámicas y realiza excursiones en barco.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "Masca",
+    "img": "https://i.postimg.cc/bwTjmNNc/Masca.jpg",
+    "descripcion": "Explora el pintoresco pueblo de Masca en Tenerife, situado en un impresionante barranco. Realiza senderismo por sus senderos y disfruta de las vistas panorámicas.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
+    "tipo": "rural"
+  },
+  {
+    "nombre": "La Gomera",
+    "img": "https://i.postimg.cc/htgB87n1/La-Gomera.jpg",
+    "descripcion": "Visita la isla de La Gomera, situada cerca de Tenerife. Descubre sus paisajes naturales, senderos de senderismo y cultura local, incluido el silbo gomero, una forma de comunicación silbada.",
+    "provincia": "661cd37b87583e7ca0fca3bf",
+    "comunidad": "Canarias",
     "tipo": "rural"
   }
 ]
