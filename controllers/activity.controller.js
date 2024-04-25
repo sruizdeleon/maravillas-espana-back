@@ -7,17 +7,18 @@ async function buscarActividadesPorTipoProvinciaOComunidad(tipo, proId, comunida
 	proId && proId !== "" ? filtro.provincia = proId : false;
 	comunidad && comunidad !== "" ? filtro.comunidad = comunidad : false;
 
-	const todasLasActividades = await Actividad.find(filtro).populate("provincia", "nombre imagenBandera");
+	const todasLasActividades = await Actividad.find(filtro).populate("provincia", "nombre", "imagenBandera");
 	return todasLasActividades;
 }
+
 
 /**
  *
  * @param {*} id
- * @returns devuelve la actividad que corresponde a dicho id
+ * @returns devuelve la actividad que corresponde a ese id
  */
 async function buscarActividadPorId(id) {
-	const actividad = await Actividad.findById(id).populate("provincia", "nombre");
+	const actividad = await Actividad.findById(id).populate("provincia", "nombre", "imagenBandera");
 	return actividad;
 }
 
