@@ -2,11 +2,11 @@ const Valoracion = require("../models/rating.model");
 
 /**
  * 
- * @param {*} actividadId 
- * @returns las valoraciones encontradas con el mismo actividadId
+ * @param {*} actividad 
+ * @returns las valoraciones encontradas con el mismo actividad
  */
-async function buscarValoracionesActividad(actividadId){
-    const valoracionesEncontradas = await Valoracion.find({actividadId: actividadId})
+async function buscarValoracionesActividad(actividad){
+    const valoracionesEncontradas = await Valoracion.find({actividad: actividad})
     .populate("usuario", "name");
     return valoracionesEncontradas;
 }
@@ -40,7 +40,7 @@ async function buscarValoracionPorId(id){
  */
 async function añadirValoracion(body) {
   const valoracion = new Valoracion({
-    actividadId: body.actividadId, /* actividadEncontrada._id */
+    actividad: body.actividad, /* actividadEncontrada._id */
     usuario: body.usuario, /* usuarioId */
     valoracion: body.valoracion,
     comentario: body.comentario,
