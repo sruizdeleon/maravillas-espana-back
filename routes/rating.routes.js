@@ -13,14 +13,14 @@ conts = {
 const {esAdmin, estaAutenticado} = require("../middleware/auth.middleware");
 
 /**
- * Esta ruta busca las valoraciones de las actividades con la query "?actividadId=", o mediante la query de "?usuario=", que sería el id del usuario aunque el controlador nos devuelva exclusivamente los atributos solicitados del usuario con ese id.
+ * Esta ruta busca las valoraciones de las actividades con la query "?actividad=", o mediante la query de "?usuario=", que sería el id del usuario aunque el controlador nos devuelva exclusivamente los atributos solicitados del usuario con ese id.
  */
 router.get(
   "/",
   /* estaAutenticado, */ async (req, res) => {
     try {
       const valoracionesDeActividadEncontradas =
-        await buscarValoracionesActividad(req.query.actividadId);
+        await buscarValoracionesActividad(req.query.actividad);
       const valoracionesDeUsuarioEncontradas = await buscarMisValoraciones(
         req.query.usuario
       );
