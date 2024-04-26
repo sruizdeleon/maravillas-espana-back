@@ -4,7 +4,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "actividad-seed": "node ./seeds/actividades.seed.js",
-    "provincia-seed": "node ./seeds/provincias.seed.js"
+    "provincia-seed": "node ./seeds/provincias.seed.js",
+    "valoracion-seed": "node ./seeds/valoraciones.seed.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
