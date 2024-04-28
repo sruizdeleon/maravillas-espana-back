@@ -17,7 +17,7 @@ const {esAdmin, estaAutenticado} = require("../middleware/auth.middleware");
  */
 router.get(
   "/",
-  /* estaAutenticado, */ async (req, res) => {
+   estaAutenticado, async (req, res) => {
     try {
       const valoracionesDeActividadEncontradas =
         await buscarValoracionesActividad(req.query.actividad);
@@ -41,7 +41,7 @@ router.get(
 
 router.get(
   "/:id",
-  /* estaAutenticado, */ async (req, res) => {
+   estaAutenticado, async (req, res) => {
     try {
       const valoracionEncontrada = await buscarValoracionPorId(req.params.id);
       return res.json({
@@ -57,7 +57,7 @@ router.get(
 /**
  * Esta ruta se usa para crear una nueva valoración
  */
-router.post("/", /* estaAutenticado, */  async(req, res)=>{
+router.post("/",  estaAutenticado,  async(req, res)=>{
   try{
     const valoracion = await añadirValoracion(req.body)
     return res.json({msg: "su valoración ha sido guardada con éxito", valoracion});
@@ -71,7 +71,7 @@ router.post("/", /* estaAutenticado, */  async(req, res)=>{
 /**
  * Esta ruta se usa para borrar la valoración cuyo id viene en el parámetro
  */
-router.delete("/:id", /*esAdmin,*/ async(req, res)=>{
+router.delete("/:id", esAdmin, async(req, res)=>{
   try{
     const valoracionBorrada = await borrarValoracion(req.params.id)
     return res.json({msg: "su valoración ha sido borrada con éxito", valoracionBorrada});

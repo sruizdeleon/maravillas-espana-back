@@ -1310,7 +1310,7 @@ const arrayActividades =[
     "descripcion": "Disfruta de un día de sol en la famosa Playa de la Concha en San Sebastián, una de las playas urbanas más bonitas del mundo, con suave arena dorada, aguas cristalinas y vistas impresionantes.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/YCyJsdG0/Playa-de-la-Concha.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1318,7 +1318,7 @@ const arrayActividades =[
     "descripcion": "Explora el encantador casco antiguo de San Sebastián, conocido como la Parte Vieja, con sus estrechas calles empedradas, plazas animadas, bares de pintxos y edificios históricos.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/N03ZgLxw/Parte-Vieja-de-San-Sebasti-n.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1326,7 +1326,7 @@ const arrayActividades =[
     "descripcion": "Sube al Monte Urgull para disfrutar de unas vistas panorámicas impresionantes de San Sebastián y su bahía, así como para explorar ruinas históricas, fortificaciones y senderos naturales.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/9F13GmcG/Monte-Urgull.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1334,7 +1334,7 @@ const arrayActividades =[
     "descripcion": "Visita el Museo San Telmo, ubicado en un antiguo convento, que alberga una importante colección de arte vasco e internacional, así como exposiciones temporales sobre arte, historia y cultura.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/j2K9799g/Museo-San-Telmo.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1342,7 +1342,7 @@ const arrayActividades =[
     "descripcion": "Embárcate en una aventura en el Parque Natural de Pagoeta, un paraíso natural de montañas, bosques, arroyos y cascadas, donde podrás practicar senderismo, observar la flora y la fauna, y disfrutar de la tranquilidad del entorno.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/W4FQL0gn/Parque-Natural-de-Pagoeta.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1350,7 +1350,7 @@ const arrayActividades =[
     "descripcion": "Descubre la impresionante Cascada de Xorroxin, situada en el corazón del Valle del Baztán, donde el río Larraun se precipita en una espectacular caída de agua rodeada de exuberante vegetación.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/XNctbjGT/Cascada-de-Xorroxin.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1358,7 +1358,7 @@ const arrayActividades =[
     "descripcion": "Contempla los impresionantes Acantilados de Zumaia, formados por estratos geológicos de millones de años de antigüedad, que ofrecen unas vistas panorámicas espectaculares y son un paraíso para los amantes de la naturaleza.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/RZ0kdk02/Sendero-del-Flysch-de-Zumaia.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd191cab02767690bce8b",
@@ -1366,7 +1366,7 @@ const arrayActividades =[
     "descripcion": "Explora el Parque Natural Aiako Harria, un área protegida de montañas rocosas y bosques de robles y hayas, que ofrece numerosas rutas de senderismo y bicicleta de montaña, así como oportunidades para observar la flora y la fauna.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/J0qFcxC1/Parque-Natural-Aiako-Harria.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1374,7 +1374,7 @@ const arrayActividades =[
     "descripcion": "Visita la impresionante Catedral de Santa María de Vitoria, un magnífico ejemplo de arquitectura gótica, que alberga obras de arte religioso, sepulcros y un claustro medieval.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/sfMqMkX2/Catedral-de-Santa-Mar-a-de-Vitoria.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1382,7 +1382,7 @@ const arrayActividades =[
     "descripcion": "Disfruta del ambiente animado de la Plaza de la Virgen Blanca en Vitoria-Gasteiz, un lugar emblemático de la ciudad donde se celebran eventos culturales, festivales y mercados tradicionales.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/sfb87TQ4/Casco-Viejo-de-Vitoria-Gasteiz.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1390,7 +1390,7 @@ const arrayActividades =[
     "descripcion": "Explora la colección de arte vasco y universal en el Museo de Bellas Artes de Álava, que cuenta con obras de artistas destacados como El Greco, Goya, Sorolla y Chillida, entre otros.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/Y9sNcyKn/Museo-de-Bellas-Artes-de-lava.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1398,7 +1398,7 @@ const arrayActividades =[
     "descripcion": "Visita el Palacio de Montehermoso, un impresionante edificio renacentista en el centro de Vitoria-Gasteiz, que alberga exposiciones de arte contemporáneo, conciertos y eventos culturales.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/YS2yMVZM/Palacio-de-Montehermoso.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1406,7 +1406,7 @@ const arrayActividades =[
     "descripcion": "Relájate y disfruta de la naturaleza en el Jardín Botánico de Santa Catalina, un oasis verde en el corazón de Vitoria-Gasteiz, que alberga una gran variedad de plantas autóctonas y exóticas.",
     "tipo": "ciudad",
     "img": "https://i.postimg.cc/L83bdRyx/Jard-n-Bot-nico-de-Santa-Catalina.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1414,7 +1414,7 @@ const arrayActividades =[
     "descripcion": "Explora la Sierra de Entzia, un impresionante macizo montañoso en el sureste de Álava, que ofrece numerosas rutas de senderismo, vistas panorámicas espectaculares y oportunidades para la observación de aves.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/Bn0VwtC8/Sierra-de-Entzia.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1422,7 +1422,7 @@ const arrayActividades =[
     "descripcion": "Contempla el espectacular Salto del Nervión, una impresionante cascada situada en el Parque Natural de Gorbeia, que se precipita desde una altura de más de 200 metros en un entorno natural de gran belleza.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/C5nGwHwF/Salto-del-Nervi-n.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1430,7 +1430,7 @@ const arrayActividades =[
     "descripcion": "Descubre la región vinícola de Rioja Alavesa, famosa por sus viñedos, bodegas y vinos de alta calidad, donde podrás realizar visitas guiadas, degustaciones y actividades relacionadas con el enoturismo.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/FKPCRpXc/Rioja-Alavesa.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "provincia": "661cd198cab02767690bce8d",
@@ -1438,7 +1438,7 @@ const arrayActividades =[
     "descripcion": "Visita el Valle Salado de Añana, una joya de la arquitectura tradicional y la ingeniería hidráulica, donde se produce la sal de forma artesanal desde hace más de 1.000 años, en un paisaje cultural único.",
     "tipo": "rural",
     "img": "https://i.postimg.cc/m2Mnw77f/Valle-Salado-de-A-ana.jpg",
-    "comunidad": "Pais Vasco"
+    "comunidad": "País Vasco"
   },
   {
     "_id": "661d0b4f3efab228a11f80fb",

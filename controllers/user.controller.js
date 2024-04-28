@@ -64,6 +64,21 @@ async function cambiarUsuario(id, usuario) {
 }
 
 /**
+ * Controlador que modifica la contraseña del usuario encontrado por su Id.
+ * @param {*} id 
+ * @param {*} nuevaPassword 
+ * @returns devuelve el usuario antes de modificar la contraseña
+ */
+async function cambiarContrasena(id, nuevaPassword) {
+    const nuevaContrasenaEncriptada = await bcrypt.hash(nuevaPassword, 12);
+    const objNuevaContrasenaEncriptada = {
+      password: nuevaContrasenaEncriptada,
+    };
+    const usuarioACambiarContrasena = await User.findByIdAndUpdate(id, objNuevaContrasenaEncriptada);
+    return usuarioACambiarContrasena;
+}
+
+/**
  * 
  * @param {*} id 
  * @returns nos devuelve el usuario que acabamos de borrar con ese id
@@ -80,5 +95,6 @@ module.exports = {
   registrar,
   login,
   cambiarUsuario,
+  cambiarContrasena,
   borrarUsuario,
 };

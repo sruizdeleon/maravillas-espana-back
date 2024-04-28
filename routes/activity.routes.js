@@ -12,7 +12,7 @@ const { estaAutenticado, esAdmin} = require("../middleware/auth.middleware");
 /**
  * Ruta para buscar todas las actividades, las que corresponden a una provinciaId o las que correspondan a la query "?comunidad="
  */
-router.get("/", /* estaAutenticado, */ async (req, res) => {
+router.get("/", estaAutenticado, async (req, res) => {
   try {
     const actividadesEncontradas = await buscarActividadesPorTipoProvinciaOComunidad(req.query.tipo, req.query.provincia, req.query.comunidad);
     return res.json({msg: "actividades encontradas:", actividadesEncontradas});
@@ -27,7 +27,7 @@ router.get("/", /* estaAutenticado, */ async (req, res) => {
 /**
  * Ruta pa buscar una actividad en concreto por su id
  */
-router.get("/:id", /* estaAutenticado, */ async (req, res) => {
+router.get("/:id", estaAutenticado, async (req, res) => {
   try {
     const actividadEncontrada = await buscarActividadPorId(req.params.id);
     return res.json({msg:"actividad encontrado", actividadEncontrada})
@@ -42,7 +42,7 @@ router.get("/:id", /* estaAutenticado, */ async (req, res) => {
 /**
  * Ruta para crear una nueva actividad
  */
-router.post("/", /* esAdmin, */ async (req, res) => {
+router.post("/", esAdmin, async (req, res) => {
   try {
     const nuevaActividad = await crearActividad(req.body);
     return res.json({msg: "actividad creada con éxito", nuevaActividad})
@@ -55,7 +55,7 @@ router.post("/", /* esAdmin, */ async (req, res) => {
 /**
  * Ruta para borrar la actividad a la que corresponde es id
  */
-router.delete("/:id", /* esAdmin, */ async (req, res) => {
+router.delete("/:id", esAdmin, async (req, res) => {
   try{
   const actividadBorrada = await borrarActividadPorId(req.params.id)
   return res.json({msg: "actividad elminada: ", actividadBorrada })
@@ -67,7 +67,7 @@ router.delete("/:id", /* esAdmin, */ async (req, res) => {
   /**
    * Ruta para modificar la actividad con dicho id de parámetro
    */
-router.put("/:id", /* esAdmin, */ async (req, res) => {
+router.put("/:id", esAdmin, async (req, res) => {
   try {
     const actividadModificada = await cambiarActividad(req.params.id, req.body);
     return res

@@ -8,6 +8,7 @@ const {
   registrar,
   login,
   cambiarUsuario,
+  cambiarContrasena,
   borrarUsuario,
 } = require("../controllers/user.controller");
 
@@ -18,7 +19,7 @@ const {pwdIguales} = require ("../middleware/usuario.middleware")
 /**
  * Ruta para buscar usuarios a través de la query "?email="
  */
-router.get("/", /* esAdmin, */ async (req, res) => {
+router.get("/", esAdmin, async (req, res) => {
   try {
     const usuariosEncontrados = await buscarUsuarios(req.query.email);
     return res.json({
@@ -83,7 +84,7 @@ router.post("/login", async (req, res) => {
 /* 
 * Podremos modificar un usuario, estando loggeado como admin y  con el id del usuario a modificar. El formulario tendrá que tener el id del usuario a modificar, y el body: name, email, password y role.
 */
-router.put("/:id", /* esAdmin, */ async (req, res) => {
+router.put("/:id", esAdmin, async (req, res) => {
   try {
     const usuarioModificado = await cambiarUsuario(req.params.id, req.body);
     return res
@@ -94,11 +95,32 @@ router.put("/:id", /* esAdmin, */ async (req, res) => {
   }
 });
 
+/* 
+* El usuario necesitará estar loggeado (dentro de su cuenta), para modificar su contraseña
+ */
+router.patch(
+  "/:id",
+  isAuthenticated,
+  middleWareVerifYCambioContrasena,
+  async (req, res) => {
+    try {
+      const usuarioAModificarContrasena = await cambiarContrasena(req.params.id, req.body.nuevaPassword);
+      const nombreUsuario = usuarioAModificarContrasena.name;
+      res
+        .status(400)
+        .json({ msg: `la contraseña ha sido modificada con éxito ${nombreUsuario}`});
+    } catch (error) {
+      res.status(500).json({ msg: "error interno del servidor" });
+      console.error(error);
+    }
+  }
+);
+
 
 /*
  * En esta ruta introduciremos el id del usuario que se desea borrar mediante un input de formulario
  */
-router.delete("/:id", /* esAdmin, */ async (req, res) => {
+router.delete("/:id", esAdmin, async (req, res) => {
   try {
     const usuarioBorrado = await borrarUsuario(req.params.id);
     return res.status(200).json({ msg: "usuario eliminado: ", usuarioBorrado });
