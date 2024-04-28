@@ -12,8 +12,8 @@ const {
   borrarUsuario,
 } = require("../controllers/user.controller");
 
-const {esAdmin} = require("../middleware/auth.middleware");
-const {pwdIguales} = require ("../middleware/usuario.middleware")
+const {estaAutenticado, esAdmin} = require("../middleware/auth.middleware");
+const {pwdIguales, middleWareVerifYCambioContrasena} = require ("../middleware/usuario.middleware")
 
 
 /**
@@ -100,7 +100,7 @@ router.put("/:id", esAdmin, async (req, res) => {
  */
 router.patch(
   "/:id",
-  isAuthenticated,
+  estaAutenticado,
   middleWareVerifYCambioContrasena,
   async (req, res) => {
     try {
