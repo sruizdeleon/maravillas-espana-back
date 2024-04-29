@@ -93,7 +93,6 @@ router.patch(
       const usuarioAModificarContrasena = await cambiarContrasena(req.params.id, req.body.nuevaPassword);
       const nombreUsuario = usuarioAModificarContrasena.name;
       res
-        .status(400)
         .json({ msg: `la contraseña ha sido modificada con éxito ${nombreUsuario}`});
     } catch (error) {
       res.status(500).json({ msg: "error interno del servidor" });
