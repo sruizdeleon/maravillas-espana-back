@@ -1,16 +1,20 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "actividad-seed": "node ./seeds/actividades.seed.js",
+    "provincia-seed": "node ./seeds/provincias.seed.js",
+    "valoracion-seed": "node ./seeds/valoraciones.seed.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.1"
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^8.1.1"
   }
 }
