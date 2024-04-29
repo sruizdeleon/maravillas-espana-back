@@ -6,73 +6,73 @@ const Valoracion = require('../models/rating.model');
 
 const arrayValoraciones = [
     {
-        "actividad": "662a02a2b3c00253cde90819",
+        "actividad": "662d2741e3a35166e3800ca0",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "¡Una joya arquitectónica! La Catedral de León me dejó sin palabras. La combinación de estilos gótico y renacentista es impresionante. ¡Definitivamente un must-see en España!"
     },
     {
-        "actividad": "662a02a2b3c00253cde90819",
+        "actividad": "662d2741e3a35166e3800ca0",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 5,
         "comentario": "¡Increíble experiencia! Desde que entras por la puerta, te sumerges en siglos de historia y arte. Los detalles en las vidrieras y las esculturas son simplemente fascinantes. ¡Una visita que no olvidaré!"
     },
     {
-        "actividad": "662a02a2b3c00253cde90819",
+        "actividad": "662d2741e3a35166e3800ca0",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 4,
         "comentario": "¡Maravillosa! La Catedral de León es una obra maestra que te deja boquiabierto. La majestuosidad de sus columnas y la delicadeza de sus adornos te transportan a otra época. ¡Altamente recomendada!"
     },
     {
-        "actividad": "662a02a2b3c00253cde90819",
+        "actividad": "662d2741e3a35166e3800ca0",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 5,
         "comentario": "¡Impresionante trabajo de arquitectura y devoción! La Catedral de León es un lugar sagrado y monumental que transmite una sensación de paz y grandeza. Cada rincón cuenta una historia. ¡No te lo puedes perder!"
     },
     {
-        "actividad": "662a02a2b3c00253cde90819",
+        "actividad": "662d2741e3a35166e3800ca0",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 4,
         "comentario": "¡Una visita obligada en León! Quedé asombrado por la grandeza de esta catedral. La calidad de las esculturas y la magnificencia de su interior son simplemente asombrosas. ¡Una experiencia que superó mis expectativas!"
     },
     {
-        "actividad": "662a02a2b3c00253cde90819",
+        "actividad": "662d2741e3a35166e3800ca0",
         "usuario": "661fec93b620e69122b293ac",
         "valoracion": 3,
         "comentario": "¡Espectacular! La Catedral de León es una joya que brilla con luz propia. La belleza de su arquitectura y la serenidad que se respira en su interior son incomparables. ¡Definitivamente uno de los lugares más impresionantes que he visitado!"
     },
     {
-        "actividad": "662a02a2b3c00253cde9081d",
+        "actividad": "662d2741e3a35166e3800ca4",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 5,
         "comentario": "¡Una experiencia inolvidable! Recorrer la Ruta del Cares fue como adentrarse en un paisaje de ensueño. Los acantilados, el río y la naturaleza salvaje te dejan sin aliento. ¡Recomendada al 100% para los amantes del senderismo y la aventura!"
     },
     {
-        "actividad": "662a02a2b3c00253cde9081d",
+        "actividad": "662d2741e3a35166e3800ca4",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "¡Impresionante belleza natural! La Ruta del Cares ofrece vistas panorámicas espectaculares que te hacen sentir pequeño ante la grandeza de la naturaleza. El recorrido es desafiante pero gratificante. ¡Una experiencia que merece la pena vivir!"
     },
     {
-        "actividad": "662a02a2b3c00253cde9081d",
+        "actividad": "662d2741e3a35166e3800ca4",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 4,
         "comentario": "¡Una joya escondida en los Picos de Europa! Caminar por la Ruta del Cares es una experiencia única que te conecta con la naturaleza en su estado más puro. Los paisajes son simplemente impresionantes y te hacen olvidar el cansancio. ¡No te arrepentirás de hacer este recorrido!"
     },
     {
-        "actividad": "662a02a2b3c00253cde9081d",
+        "actividad": "662d2741e3a35166e3800ca4",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 5,
         "comentario": "¡Increíble aventura! La Ruta del Cares es un tesoro que hay que descubrir. Los paisajes de montaña te dejarán sin palabras y las vistas del desfiladero son simplemente impresionantes. ¡Una caminata que recordaré para siempre!"
     },
     {
-        "actividad": "662a02a2b3c00253cde9081d",
+        "actividad": "662d2741e3a35166e3800ca4",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 4,
         "comentario": "¡Espectacular senderismo en medio de la naturaleza! La Ruta del Cares es un paraíso para los amantes del trekking. Los paisajes son de una belleza indescriptible y la sensación de paz que se respira es incomparable. ¡Una experiencia que todos deberían vivir al menos una vez en la vida!"
     },
     {
-        "actividad": "662a02a2b3c00253cde9081d",
+        "actividad": "662d2741e3a35166e3800ca4",
         "usuario": "661fec93b620e69122b293ac",
         "valoracion": 3,
         "comentario": "¡Increíblemente hermoso! La Ruta del Cares es una de las caminatas más impresionantes que he hecho. Los paisajes son de otro mundo y la sensación de estar rodeado de montañas es indescriptible. ¡Definitivamente vale la pena el esfuerzo!"
@@ -438,73 +438,73 @@ const arrayValoraciones = [
         "comentario": "Refugio natural. Paz y tranquilidad, biodiversidad única. Un paraíso que cautiva con su belleza y te invita a perderse en su infinita serenidad."
     },
     {
-        "actividad": "662a02a2b3c00253cde908bb",
+        "actividad": "662f55064e6fffe8f2aea15a",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "Imponente belleza. Arquitectura gótica, detalles fascinantes. Una joya histórica que cautiva con su esplendor y esencia espiritual."
     },
     {
-        "actividad": "662a02a2b3c00253cde908bb",
+        "actividad": "662f55064e6fffe8f2aea15a",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 5,
         "comentario": "Tesoro navarro. Historia viva, arte sacro. Un lugar de devoción y admiración que enriquece la cultura de la región."
     },
     {
-        "actividad": "662a02a2b3c00253cde908bb",
+        "actividad": "662f55064e6fffe8f2aea15a",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 4,
         "comentario": "Monumento emblemático. Icono de Pamplona, escenario de eventos históricos. Una visita imprescindible para entender la identidad de la ciudad."
     },
     {
-        "actividad": "662a02a2b3c00253cde908bb",
+        "actividad": "662f55064e6fffe8f2aea15a",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 5,
         "comentario": "Majestuosa grandeza. Altos pilares, vidrieras coloridas. Una experiencia que te sumerge en la solemnidad y la grandeza del pasado."
     },
     {
-        "actividad": "662a02a2b3c00253cde908bb",
+        "actividad": "662f55064e6fffe8f2aea15a",
         "usuario": "661fec93b620e69122b293ac",
         "valoracion": 3,
         "comentario": "Centro espiritual. Silencio reverente, atmósfera sagrada. Un espacio que invita a la contemplación y la reflexión personal."
     },
     {
-        "actividad": "662a02a2b3c00253cde908bb",
+        "actividad": "662f55064e6fffe8f2aea15a",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 4,
         "comentario": "Maravilla arquitectónica. Capiteles decorados, claustro sereno. Un testimonio de fe y arte que deja una profunda impresión en el visitante."
     },
     {
-        "actividad": "662a02a2b3c00253cde908c1",
+        "actividad": "662f55064e6fffe8f2aea160",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "Sendero mágico. Paisajes pintorescos, pueblos con encanto. Una travesía espiritual y cultural que enriquece el alma y deja huella."
     },
     {
-        "actividad": "662a02a2b3c00253cde908c1",
+        "actividad": "662f55064e6fffe8f2aea160",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 5,
         "comentario": "Ruta histórica. Monumentos medievales, hospitalidad navarra. Un viaje fascinante que conecta con la tradición y la historia del Camino."
     },
     {
-        "actividad": "662a02a2b3c00253cde908c1",
+        "actividad": "662f55064e6fffe8f2aea160",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 4,
         "comentario": "Aventura inolvidable. Naturaleza virgen, caminos ancestrales. Una experiencia de autodescubrimiento y superación que deja recuerdos imborrables."
     },
     {
-        "actividad": "662a02a2b3c00253cde908c1",
+        "actividad": "662f55064e6fffe8f2aea160",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 5,
         "comentario": "Encanto rural. Campos dorados, aldeas acogedoras. Un recorrido que invita a la introspección y la comunión con la naturaleza."
     },
     {
-        "actividad": "662a02a2b3c00253cde908c1",
+        "actividad": "662f55064e6fffe8f2aea160",
         "usuario": "661fec93b620e69122b293ac",
         "valoracion": 3,
         "comentario": "Travesía espiritual. Paz interior, camaradería entre peregrinos. Un camino de reflexión y encuentro que transforma el corazón."
     },
     {
-        "actividad": "662a02a2b3c00253cde908c1",
+        "actividad": "662f55064e6fffe8f2aea160",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 4,
         "comentario": "Caminar hacia la historia. Monumentos milenarios, paisajes inspiradores. Una ruta que te sumerge en la esencia del Camino y te lleva hacia lo más profundo del alma."
@@ -546,109 +546,109 @@ const arrayValoraciones = [
         "comentario": "Maravilla arquitectónica. Columnas barrocas, altar imponente. Un monumento que impresiona por su magnificencia y su importancia histórica y cultural."
     },
     {
-        "actividad": "662a02a2b3c00253cde908d2",
+        "actividad": "662f55064e6fffe8f2aea171",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "Paraíso natural. Cascadas impresionantes, jardines exuberantes. Un oasis de serenidad que sorprende y enamora a cada paso."
     },
     {
-        "actividad": "662a02a2b3c00253cde908d2",
+        "actividad": "662f55064e6fffe8f2aea171",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 5,
         "comentario": "Magia entre rocas. Senderos encantados, cuevas misteriosas. Un lugar que te transporta a un mundo de fantasía y asombro."
     },
     {
-        "actividad": "662a02a2b3c00253cde908d2",
+        "actividad": "662f55064e6fffe8f2aea171",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 4,
         "comentario": "Escenario de ensueño. Agua cristalina, vegetación exótica. Un refugio de paz y belleza que invita a la contemplación."
     },
     {
-        "actividad": "662a02a2b3c00253cde908d2",
+        "actividad": "662f55064e6fffe8f2aea171",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 5,
         "comentario": "Maravilla escondida. Ríos serpenteantes, grutas ocultas. Un tesoro natural que revela la grandeza y la diversidad del paisaje."
     },
     {
-        "actividad": "662a02a2b3c00253cde908d2",
+        "actividad": "662f55064e6fffe8f2aea171",
         "usuario": "661fec93b620e69122b293ac",
         "valoracion": 3,
         "comentario": "Recreo celestial. Rincones secretos, flora y fauna única. Un escape perfecto para conectar con la naturaleza y desconectar del mundo."
     },
     {
-        "actividad": "662a02a2b3c00253cde908d2",
+        "actividad": "662f55064e6fffe8f2aea171",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 4,
         "comentario": "Joyero de la naturaleza. Saltos de agua, fauna salvaje. Un destino ideal para disfrutar en familia y crear recuerdos inolvidables."
     },
     {
-        "actividad": "662a02a2b3c00253cde908f9",
+        "actividad": "662f55064e6fffe8f2aea198",
         "usuario": "661ebf97b620e69122b293a6",
         "valoracion": 4,
         "comentario": "El Museo del Prado es una experiencia cultural increíble. Disfruté mucho de las obras maestras de Velázquez y Goya."
     },
     {
-        "actividad": "662a02a2b3c00253cde908f9",
+        "actividad": "662f55064e6fffe8f2aea198",
         "usuario": "66237461e7116f5d752b7c42",
         "valoracion": 5,
         "comentario": "Visitar el Museo del Prado fue una experiencia única. Las pinturas de El Greco son simplemente impresionantes. Me quedé sin palabras al contemplar la profundidad y la emoción de cada obra. Definitivamente planeo volver para explorar más a fondo este tesoro del arte."
     },
     {
-        "actividad": "662a02a2b3c00253cde908f9",
+        "actividad": "662f55064e6fffe8f2aea198",
         "usuario": "662a79b54ede8976c64d8303",
         "valoracion": 3,
         "comentario": "Me gustó el Museo del Prado, pero había demasiada gente y fue difícil apreciar las obras con tranquilidad. A pesar de esto, pude disfrutar de algunas de las piezas más destacadas, como Las Meninas de Velázquez. Sería genial si el museo pudiera implementar medidas para reducir la multitud y mejorar la experiencia de los visitantes."
     },
     {
-        "actividad": "662a02a2b3c00253cde908f9",
+        "actividad": "662f55064e6fffe8f2aea198",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 2,
         "comentario": "Mi experiencia en el Museo del Prado fue un poco decepcionante. Aunque algunas obras son impresionantes, encontré que la distribución del museo y la información sobre las piezas podrían mejorar. Me hubiera gustado tener más guías o explicaciones para apreciar mejor las obras."
     },
     {
-        "actividad": "662a02a2b3c00253cde908f9",
+        "actividad": "662f55064e6fffe8f2aea198",
         "usuario": "661ebf97b620e69122b293a6",
         "valoracion": 3,
         "comentario": "Visitar el Museo del Prado fue una experiencia interesante. Aunque disfruté de algunas obras maestras, como Las Meninas de Velázquez, encontré que la cantidad de visitantes dificultaba la apreciación de las obras. Sería genial si se pudiera controlar mejor el flujo de personas para una experiencia más tranquila."
     },
     {
-        "actividad": "662a02a2b3c00253cde908f9",
+        "actividad": "662f55064e6fffe8f2aea198",
         "usuario": "66252f1426cdad435937cdfa",
         "valoracion": 5,
         "comentario": "El Museo del Prado es simplemente asombroso. Quedé impresionado por la calidad y la diversidad de las obras de arte expuestas. Fue emocionante ver de cerca pinturas que había estudiado en libros de arte. Definitivamente uno de los mejores museos que he visitado."
     },
     {
-        "actividad": "662a02a2b3c00253cde908ff",
+        "actividad": "662f55064e6fffe8f2aea19e",
         "usuario": "662a79b54ede8976c64d8303",
         "valoracion": 4,
         "comentario": "El embalse de Valmayor es un lugar impresionante para disfrutar de la naturaleza y practicar deportes acuáticos. Pasé un día increíble aquí con mi familia. El entorno es hermoso y la tranquilidad del embalse es realmente relajante. Recomiendo este lugar a cualquiera que busque escapar del ajetreo y el bullicio de la ciudad."
     },
     {
-        "actividad": "662a02a2b3c00253cde908ff",
+        "actividad": "662f55064e6fffe8f2aea19e",
         "usuario": "661ebf97b620e69122b293a6",
         "valoracion": 5,
         "comentario": "¡El embalse de Valmayor es simplemente espectacular! He visitado este lugar varias veces y nunca me canso de su belleza. Me encanta hacer kayak y paddle surf aquí. El embalse es lo suficientemente grande como para explorar y siempre encuentro rincones tranquilos para relajarme y disfrutar del paisaje. Definitivamente uno de mis lugares favoritos para escapar de la rutina."
     },
     {
-        "actividad": "662a02a2b3c00253cde908ff",
+        "actividad": "662f55064e6fffe8f2aea19e",
         "usuario": "662abb75cf788cb1ee0b7c15",
         "valoracion": 3,
         "comentario": "El embalse de Valmayor es un lugar bonito, pero en mi última visita estaba un poco abarrotado y había mucho ruido de motos de agua. Esto afectó mi experiencia tranquila y relajante que estaba buscando. Sería genial si se pudieran implementar medidas para regular el número de visitantes y limitar el ruido de las actividades acuáticas."
     },
     {
-        "actividad": "662a02a2b3c00253cde908ff",
+        "actividad": "662f55064e6fffe8f2aea19e",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 1,
         "comentario": "Mi experiencia en el embalse de Valmayor fue muy decepcionante. El lugar estaba muy sucio y descuidado, con basura esparcida por todas partes. Además, el agua del embalse parecía contaminada y no era segura para nadar. No recomendaría este lugar a nadie."
     },
     {
-        "actividad": "662a02a2b3c00253cde908ff",
+        "actividad": "662f55064e6fffe8f2aea19e",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 4,
         "comentario": "Visitar el embalse de Valmayor fue una experiencia muy agradable. Me encantó la tranquilidad del entorno y la oportunidad de relajarme junto al agua. También me impresionó la limpieza y el mantenimiento del área. Definitivamente lo recomendaría como un destino para un día de relax."
     },
     {
-        "actividad": "662a02a2b3c00253cde908ff",
+        "actividad": "662f55064e6fffe8f2aea19e",
         "usuario": "661ebe6cf8983af2ee3786cf",
         "valoracion": 3,
         "comentario": "El embalse de Valmayor tiene un entorno natural hermoso, pero me decepcionó un poco la falta de instalaciones para los visitantes. Sería genial si hubiera más áreas de picnic y lugares para sentarse cómodamente junto al embalse. Además, algunas señales de información sobre la fauna y la flora serían útiles para los visitantes interesados en la naturaleza."
@@ -696,241 +696,241 @@ const arrayValoraciones = [
         "comentario": "El Parque Natural de la Montaña de Montserrat tiene una belleza natural impresionante, pero me decepcionó un poco la falta de infraestructura para los visitantes. Sería genial si hubiera más áreas de descanso y señalización para facilitar la navegación por los senderos."
     },
     {
-        "actividad": "662a02a2b3c00253cde90947",
+        "actividad": "662f55064e6fffe8f2aea1e6",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "La Ciudad de las Artes y las Ciencias es un lugar impresionante. Quedé fascinado por la arquitectura moderna y las exhibiciones interactivas. La visita al Oceanogràfic fue especialmente memorable, con una increíble variedad de especies marinas. Definitivamente una visita obligada en Valencia."
     },
     {
-        "actividad": "662a02a2b3c00253cde90947",
+        "actividad": "662f55064e6fffe8f2aea1e6",
         "usuario": "661ebf97b620e69122b293a6",
         "valoracion": 4,
         "comentario": "Disfruté mucho de mi visita a la Ciudad de las Artes y las Ciencias. Las estructuras futuristas son impresionantes y las exhibiciones en el Museo de las Ciencias son muy educativas. Sin embargo, encontré que las entradas eran un poco caras para algunas atracciones."
     },
     {
-        "actividad": "662a02a2b3c00253cde90947",
+        "actividad": "662f55064e6fffe8f2aea1e6",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 3,
         "comentario": "La Ciudad de las Artes y las Ciencias es interesante, pero me esperaba más. Algunas exhibiciones estaban cerradas durante mi visita y la cantidad de turistas hacía que fuera difícil disfrutar plenamente de la experiencia. Sin embargo, la arquitectura es impresionante."
     },
     {
-        "actividad": "662a02a2b3c00253cde90947",
+        "actividad": "662f55064e6fffe8f2aea1e6",
         "usuario": "661ebe8ef8983af2ee3786d1",
         "valoracion": 4,
         "comentario": "La Ciudad de las Artes y las Ciencias es un lugar muy bonito para pasear y tomar fotos. Me impresionó especialmente el Hemisfèric y su proyección en 3D. Sin embargo, encontré que algunas áreas estaban un poco descuidadas y necesitarían más mantenimiento."
     },
     {
-        "actividad": "662a02a2b3c00253cde9094c",
+        "actividad": "662f55064e6fffe8f2aea1eb",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "El Parque Natural de la Albufera es un lugar impresionante. Disfruté de un tranquilo paseo en barca por el lago y quedé maravillado por la belleza natural que lo rodea. La observación de aves fue una experiencia única y la puesta de sol fue espectacular. Definitivamente un lugar que hay que visitar en Valencia."
     },
     {
-        "actividad": "662a02a2b3c00253cde9094c",
+        "actividad": "662f55064e6fffe8f2aea1eb",
         "usuario": "661ebe6cf8983af2ee3786cf",
         "valoracion": 4,
         "comentario": "Pasé un día encantador en el Parque Natural de la Albufera. El paisaje es hermoso y la oportunidad de hacer un recorrido en barca por el lago fue muy especial. Sin embargo, encontré que algunas áreas estaban un poco descuidadas y podrían beneficiarse de más limpieza y mantenimiento."
     },
     {
-        "actividad": "662a02a2b3c00253cde9094c",
+        "actividad": "662f55064e6fffe8f2aea1eb",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 3,
         "comentario": "El Parque Natural de la Albufera es bonito, pero me esperaba más. Encontré que el recorrido en barca era un poco corto y que la experiencia general no estaba tan bien organizada como esperaba. Aún así, la naturaleza es hermosa y vale la pena visitar el parque para disfrutar de un día tranquilo."
     },
     {
-        "actividad": "662a02a2b3c00253cde9094c",
+        "actividad": "662f55064e6fffe8f2aea1eb",
         "usuario": "661baa24e9065ef1b154ec05",
         "valoracion": 3,
         "comentario": "El Parque Natural de la Albufera ofrece un entorno natural hermoso, pero la experiencia en barca fue un poco decepcionante. El recorrido fue breve y el barco estaba lleno de turistas, lo que restó un poco de encanto al paseo. Sin embargo, la puesta de sol sobre el lago fue increíble."
     },
     {
-        "actividad": "662a02a2b3c00253cde9091f",
+        "actividad": "662f55064e6fffe8f2aea1be",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "El Alcázar de Toledo es una joya arquitectónica. Quedé impresionado por su imponente presencia y su historia fascinante. La visita guiada fue muy informativa y pude aprender mucho sobre la importancia de este edificio a lo largo de los siglos. Definitivamente una visita obligada en Toledo."
     },
     {
-        "actividad": "662a02a2b3c00253cde9091f",
+        "actividad": "662f55064e6fffe8f2aea1be",
         "usuario": "662bdc181d3cd3d167d59def",
         "valoracion": 4,
         "comentario": "Disfruté mucho de mi visita al Alcázar de Toledo. La arquitectura es impresionante y las vistas desde lo alto de la torre son espectaculares. Sin embargo, encontré que algunas áreas estaban un poco deterioradas y podrían necesitar más atención en términos de mantenimiento."
     },
     {
-        "actividad": "662a02a2b3c00253cde9091f",
+        "actividad": "662f55064e6fffe8f2aea1be",
         "usuario": "66252f1426cdad435937cdfa",
         "valoracion": 3,
         "comentario": "El Alcázar de Toledo es interesante desde el punto de vista histórico, pero la experiencia fue un poco decepcionante. Encontré que la visita no estaba muy bien organizada y que había demasiados visitantes al mismo tiempo, lo que dificultaba disfrutar plenamente del lugar."
     },
     {
-        "actividad": "662a02a2b3c00253cde9091f",
+        "actividad": "662f55064e6fffe8f2aea1be",
         "usuario": "661ebe8ef8983af2ee3786d1",
         "valoracion": 3,
         "comentario": "El Alcázar de Toledo es impresionante desde el exterior, pero me decepcionó un poco el interior. Encontré que algunas áreas estaban cerradas al público y la información disponible era limitada. Sin embargo, la historia del lugar es fascinante y vale la pena visitarlo para aprender sobre el pasado de Toledo."
     },
     {
-        "actividad": "662a02a2b3c00253cde90924",
+        "actividad": "662f55064e6fffe8f2aea1c3",
         "usuario": "662bdc181d3cd3d167d59def",
         "valoracion": 5,
         "comentario": "El Parque Nacional de Cabañeros es un tesoro natural. Quedé impresionado por la belleza de sus paisajes y la diversidad de flora y fauna que se pueden encontrar aquí. Realicé varias caminatas por los senderos y quedé maravillado por la tranquilidad y la paz que se respira en el parque. Sin duda, un lugar que hay que visitar para los amantes de la naturaleza."
     },
     {
-        "actividad": "662a02a2b3c00253cde90924",
+        "actividad": "662f55064e6fffe8f2aea1c3",
         "usuario": "662bdc621d3cd3d167d59df1",
         "valoracion": 4,
         "comentario": "Disfruté mucho de mi visita al Parque Nacional de Cabañeros. La oportunidad de avistar animales salvajes en su hábitat natural fue emocionante. Además, los miradores ofrecen vistas panorámicas impresionantes. La única desventaja fue que algunos senderos estaban un poco mal mantenidos."
     },
     {
-        "actividad": "662a02a2b3c00253cde90924",
+        "actividad": "662f55064e6fffe8f2aea1c3",
         "usuario": "662abb75cf788cb1ee0b7c15",
         "valoracion": 4,
         "comentario": "El Parque Nacional de Cabañeros es un lugar hermoso para desconectar de la ciudad y conectar con la naturaleza. Realicé un safari fotográfico y quedé impresionado por la cantidad de animales que pude ver. Las guías turísticas fueron muy informativas y añadieron valor a la experiencia."
     },
     {
-        "actividad": "662a02a2b3c00253cde90924",
+        "actividad": "662f55064e6fffe8f2aea1c3",
         "usuario": "66252f1426cdad435937cdfa",
         "valoracion": 3,
         "comentario": "El Parque Nacional de Cabañeros tiene paisajes impresionantes, pero la experiencia fue un poco decepcionante debido a la cantidad de turistas. En algunas zonas, era difícil encontrar tranquilidad y disfrutar plenamente del entorno natural. Sería genial si se implementaran medidas para regular el número de visitantes."
     },
     {
-        "actividad": "662a02a2b3c00253cde90960",
+        "actividad": "662f55064e6fffe8f2aea1ff",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 5,
         "comentario": "La Catedral de Sevilla es impresionante. Quedé maravillado por su imponente arquitectura gótica y la belleza de su interior. La visita a la Giralda ofreció vistas panorámicas increíbles de la ciudad. Sin duda, uno de los lugares más impresionantes que he visitado en Sevilla."
     },
     {
-        "actividad": "662a02a2b3c00253cde90960",
+        "actividad": "662f55064e6fffe8f2aea1ff",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 4,
         "comentario": "Disfruté mucho de mi visita a la Catedral de Sevilla. La riqueza de su historia y su arte es simplemente asombrosa. Me impresionaron especialmente los detalles de la Capilla Real y el Patio de los Naranjos. Sin embargo, la cantidad de turistas puede hacer que la visita sea un poco abrumadora."
     },
     {
-        "actividad": "662a02a2b3c00253cde90960",
+        "actividad": "662f55064e6fffe8f2aea1ff",
         "usuario": "662bdc621d3cd3d167d59df1",
         "valoracion": 4,
         "comentario": "La Catedral de Sevilla es un lugar impresionante para explorar. La magnitud de sus estructuras y la belleza de sus obras de arte son simplemente asombrosas. Disfruté especialmente de la visita a la Sala Capitular y la subida a la Giralda. Recomiendo llegar temprano para evitar las multitudes."
     },
     {
-        "actividad": "662a02a2b3c00253cde90960",
+        "actividad": "662f55064e6fffe8f2aea1ff",
         "usuario": "662bdc181d3cd3d167d59def",
         "valoracion": 3,
         "comentario": "La Catedral de Sevilla es hermosa, pero la experiencia fue un poco decepcionante debido a la cantidad de turistas. En algunos momentos, era difícil apreciar plenamente la magnitud del lugar debido a las aglomeraciones. Sería genial si se pudiera limitar el número de visitantes para una experiencia más tranquila."
     },
     {
-        "actividad": "662a02a2b3c00253cde90966",
+        "actividad": "662f55064e6fffe8f2aea205",
         "usuario": "662abb75cf788cb1ee0b7c15",
         "valoracion": 5,
         "comentario": "La ruta por los Pueblos Blancos de la Sierra Norte de Sevilla fue una experiencia inolvidable. Disfruté mucho explorando los encantadores pueblos blancos y admirando sus pintorescas calles y plazas. Los paisajes naturales son impresionantes y el ambiente rural es muy acogedor. Definitivamente una forma perfecta de experimentar la auténtica vida en Andalucía."
     },
     {
-        "actividad": "662a02a2b3c00253cde90966",
+        "actividad": "662f55064e6fffe8f2aea205",
         "usuario": "661ebe8ef8983af2ee3786d1",
         "valoracion": 4,
         "comentario": "Realicé la ruta por los Pueblos Blancos de la Sierra Norte de Sevilla y quedé impresionado por la belleza de la región. Cada pueblo tiene su propio encanto único y ofrece vistas panorámicas increíbles. Me encantó especialmente la arquitectura tradicional y la hospitalidad de los lugareños. Sin embargo, algunos caminos pueden ser un poco difíciles de transitar."
     },
     {
-        "actividad": "662a02a2b3c00253cde90966",
+        "actividad": "662f55064e6fffe8f2aea205",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 4,
         "comentario": "La ruta por los Pueblos Blancos de la Sierra Norte de Sevilla fue una experiencia fascinante. Los pueblos son pintorescos y llenos de historia, y las vistas de la sierra son impresionantes. Disfruté especialmente de las paradas en los miradores naturales y de las oportunidades para hacer senderismo. Recomiendo esta ruta a cualquiera que quiera explorar la belleza de Andalucía."
     },
     {
-        "actividad": "662a02a2b3c00253cde90966",
+        "actividad": "662f55064e6fffe8f2aea205",
         "usuario": "661ba95ae9065ef1b154ebfd",
         "valoracion": 3,
         "comentario": "Realicé la ruta por los Pueblos Blancos de la Sierra Norte de Sevilla y aunque los paisajes eran hermosos, la experiencia fue un poco decepcionante. En algunos pueblos, encontré que había demasiados turistas, lo que restó un poco de autenticidad al ambiente. Además, algunas carreteras estaban en mal estado y hacían difícil el acceso a ciertas áreas."
     },
     {
-        "actividad": "662a02a2b3c00253cde90985",
+        "actividad": "662f55064e6fffe8f2aea224",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 5,
         "comentario": "El Museo Picasso de Málaga es simplemente increíble. Quedé impresionado por la extensa colección de obras del famoso artista. La disposición de las obras y la información proporcionada fueron excelentes. Además, el edificio en sí es hermoso y bien conservado. Definitivamente una visita obligada para los amantes del arte."
     },
     {
-        "actividad": "662a02a2b3c00253cde90985",
+        "actividad": "662f55064e6fffe8f2aea224",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 4,
         "comentario": "Disfruté mucho de mi visita al Museo Picasso de Málaga. La variedad de obras expuestas ofrece una visión completa del trabajo del artista a lo largo de su vida. Me impresionaron especialmente las obras de su periodo cubista. Sin embargo, encontré que algunas áreas estaban un poco abarrotadas y hubiera preferido más espacio para apreciar las obras."
     },
     {
-        "actividad": "662a02a2b3c00253cde90985",
+        "actividad": "662f55064e6fffe8f2aea224",
         "usuario": "66237461e7116f5d752b7c42",
         "valoracion": 4,
         "comentario": "El Museo Picasso de Málaga es un lugar fascinante para explorar la vida y obra del famoso artista. Disfruté mucho de la audioguía que proporcionaba información detallada sobre cada obra. Además, el personal del museo fue muy amable y servicial. Sin embargo, había bastante gente durante mi visita, lo que dificultaba moverse con libertad."
     },
     {
-        "actividad": "662a02a2b3c00253cde90985",
+        "actividad": "662f55064e6fffe8f2aea224",
         "usuario": "66252f1426cdad435937cdfa",
         "valoracion": 3,
         "comentario": "El Museo Picasso de Málaga tiene una colección interesante, pero la experiencia fue un poco decepcionante. Encontré que algunas obras estaban mal iluminadas y era difícil apreciar los detalles. Además, la disposición de las salas era un poco confusa y me costó encontrar algunas obras específicas."
     },
     {
-        "actividad": "662a02a2b3c00253cde9098a",
+        "actividad": "662f55064e6fffe8f2aea229",
         "usuario": "661ebe8ef8983af2ee3786d1",
         "valoracion": 5,
         "comentario": "¡La experiencia de senderismo en el Caminito del Rey fue increíble! Los paisajes son impresionantes y la emoción de caminar por los estrechos senderos colgantes es incomparable. Las vistas desde lo alto son simplemente espectaculares. Definitivamente una actividad que recordaré para siempre."
     },
     {
-        "actividad": "662a02a2b3c00253cde9098a",
+        "actividad": "662f55064e6fffe8f2aea229",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 3,
         "comentario": "El Caminito del Rey ofrece unas vistas impresionantes, pero la experiencia de senderismo puede ser un poco desafiante. Algunas partes del camino son estrechas y vertiginosas, lo que puede ser intimidante para algunas personas. Sin embargo, las vistas panorámicas hacen que el esfuerzo valga la pena."
     },
     {
-        "actividad": "662a02a2b3c00253cde9098a",
+        "actividad": "662f55064e6fffe8f2aea229",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 3,
         "comentario": "Hice senderismo en el Caminito del Rey y aunque las vistas eran hermosas, la experiencia fue un poco decepcionante. Había demasiada gente durante mi visita, lo que hacía difícil disfrutar plenamente del camino. Además, algunas áreas estaban un poco descuidadas y necesitaban más mantenimiento."
     },
     {
-        "actividad": "662a02a2b3c00253cde9098a",
+        "actividad": "662f55064e6fffe8f2aea229",
         "usuario": "66237461e7116f5d752b7c42",
         "valoracion": 2,
         "comentario": "La experiencia de senderismo en el Caminito del Rey fue menos satisfactoria de lo que esperaba. Encontré que algunas partes del camino estaban en mal estado y era difícil caminar con seguridad. Además, la cantidad de turistas hacía que el camino estuviera muy concurrido, lo que restaba un poco de encanto al entorno natural."
     },
     {
-        "actividad": "662a02a2b3c00253cde909ad",
+        "actividad": "662f55064e6fffe8f2aea24c",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 4,
         "comentario": "La Catedral de Palma de Mallorca es una obra maestra arquitectónica. Quedé impresionado por su magnífica estructura gótica y los detalles de su diseño. La visita guiada fue muy informativa y pude aprender mucho sobre la historia del lugar. Definitivamente una visita que recomendaría a cualquier persona que visite Mallorca."
     },
     {
-        "actividad": "662a02a2b3c00253cde909ad",
+        "actividad": "662f55064e6fffe8f2aea24c",
         "usuario": "661baa05e9065ef1b154ec03",
         "valoracion": 4,
         "comentario": "La Catedral de Palma de Mallorca es impresionante en su belleza y grandeza. Disfruté mucho de la visita y quedé maravillado por la arquitectura y las obras de arte que alberga. Las vistas desde la terraza son espectaculares. Sin duda, uno de los lugares más destacados de Mallorca."
     },
     {
-        "actividad": "662a02a2b3c00253cde909ad",
+        "actividad": "662f55064e6fffe8f2aea24c",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 3,
         "comentario": "La Catedral de Palma de Mallorca es impresionante desde el exterior, pero la experiencia dentro fue un poco decepcionante. Encontré que algunas áreas estaban cerradas al público y la cantidad de visitantes hacía que fuera difícil apreciar plenamente la belleza del lugar. Sería genial si se pudiera mejorar la organización de las visitas."
     },
     {
-        "actividad": "662a02a2b3c00253cde909ad",
+        "actividad": "662f55064e6fffe8f2aea24c",
         "usuario": "662bdc621d3cd3d167d59df1",
         "valoracion": 1,
         "comentario": "Mi experiencia en la Catedral de Palma de Mallorca fue muy decepcionante. A pesar de la impresionante arquitectura, encontré que el interior estaba mal iluminado y poco cuidado. Además, había demasiada gente durante mi visita, lo que hacía difícil disfrutar de la visita. No recomendaría esta actividad."
     },
     {
-        "actividad": "662a02a2b3c00253cde909b2",
+        "actividad": "662f55064e6fffe8f2aea251",
         "usuario": "661ba9d9e9065ef1b154ebff",
         "valoracion": 5,
         "comentario": "El Parque Natural de Mondragó es simplemente espectacular. Quedé maravillado por la belleza de sus playas, calas y acantilados. Disfruté mucho de las caminatas por los senderos naturales y de la observación de aves. Sin duda, un lugar que recomendaría a cualquiera que visite Mallorca en busca de naturaleza y tranquilidad."
     },
     {
-        "actividad": "662a02a2b3c00253cde909b2",
+        "actividad": "662f55064e6fffe8f2aea251",
         "usuario": "662bdc621d3cd3d167d59df1",
         "valoracion": 4,
         "comentario": "Disfruté mucho de mi visita al Parque Natural de Mondragó. Las playas son hermosas y el agua cristalina invita a nadar y bucear. Además, los senderos para caminar ofrecen vistas impresionantes de la costa. Sin embargo, encontré que algunas áreas estaban un poco concurridas durante la temporada alta."
     },
     {
-        "actividad": "662a02a2b3c00253cde909b2",
+        "actividad": "662f55064e6fffe8f2aea251",
         "usuario": "66237461e7116f5d752b7c42",
         "valoracion": 2,
         "comentario": "Mi experiencia en el Parque Natural de Mondragó fue decepcionante. A pesar de la belleza natural del lugar, encontré que había demasiada basura en las playas y senderos. Además, había mucha gente durante mi visita, lo que hacía que fuera difícil encontrar un lugar tranquilo para disfrutar de la naturaleza."
     },
     {
-        "actividad": "662a02a2b3c00253cde909b2",
+        "actividad": "662f55064e6fffe8f2aea251",
         "usuario": "661ba9eae9065ef1b154ec01",
         "valoracion": 2,
         "comentario": "El Parque Natural de Mondragó tiene paisajes hermosos, pero la experiencia fue menos satisfactoria de lo que esperaba. Encontré que algunas áreas estaban cerradas al público y la falta de mantenimiento hacía que los senderos fueran difíciles de transitar. Además, la cantidad de turistas restaba un poco de encanto al lugar."

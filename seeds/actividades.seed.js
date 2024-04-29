@@ -6,6 +6,7 @@ const Actividad = require('../models/activity.model');
 
 const arrayActividades =[
   {
+    "_id": "662d2741e3a35166e3800ca0",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Catedral de León",
     "descripcion": "Contempla la impresionante arquitectura gótica de la Catedral de León, una de las más destacadas de España.",
@@ -14,6 +15,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca1",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Barrio Húmedo",
     "descripcion": "Sumérgete en la vida nocturna de León en el Barrio Húmedo, conocido por sus animados bares de tapas y ambiente festivo.",
@@ -22,6 +24,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca2",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Museo de Arte Contemporáneo de Castilla y León (MUSAC)",
     "descripcion": "Explora el arte contemporáneo en este innovador museo que alberga una variedad de exposiciones y eventos culturales.",
@@ -30,6 +33,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca3",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Murallas de León",
     "descripcion": "Recorre las antiguas murallas de León y admira las vistas panorámicas de la ciudad desde lo alto de sus torres.",
@@ -38,6 +42,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca4",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Ruta del Cares",
     "descripcion": "Embárcate en esta espectacular ruta de senderismo que atraviesa el desfiladero del río Cares, ofreciendo vistas impresionantes de los Picos de Europa.",
@@ -46,6 +51,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca5",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Visita a las Médulas",
     "descripcion": "Explora este paisaje único formado por antiguas minas de oro romanas, ahora declarado Patrimonio de la Humanidad por la UNESCO.",
@@ -54,6 +60,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca6",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Visita a los Pueblos de los Ancares",
     "descripcion": "Recorre los encantadores pueblos de montaña de la comarca de los Ancares y descubre su arquitectura tradicional y su estilo de vida rural.",
@@ -62,6 +69,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca7",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Cuevas de Valporquero",
     "descripcion": "Explora las fascinantes Cuevas de Valporquero, un complejo kárstico subterráneo en la provincia de León. Descubre sus impresionantes formaciones geológicas, como estalactitas y estalagmitas, mientras te adentras en sus galerías y salas.",
@@ -70,6 +78,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca8",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Plaza Mayor de Burgos",
     "descripcion": "Disfruta del bullicio y la vida cotidiana en la Plaza Mayor de Burgos, rodeada de edificios históricos y animados cafés.",
@@ -78,6 +87,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800ca9",
     "nombre": "Catedral de Burgos",
     "img": "https://i.postimg.cc/cC3pKSMf/Catedral-Burgos.jpg",
     "descripcion": "La Catedral de Santa María de Burgos es un impresionante ejemplo del arte gótico en España. Construida entre los siglos XIII y XVI, es conocida por su majestuosa arquitectura, sus vidrieras espectaculares y sus numerosas esculturas. Es uno de los principales monumentos de Burgos y un importante lugar de peregrinación en el Camino de Santiago.",
@@ -86,6 +96,7 @@ const arrayActividades =[
     "tipo": "ciudad"
   },
   {
+    "_id": "662d2741e3a35166e3800caa",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Paseo por el Paseo del Espolón",
     "descripcion": "Relájate y disfruta de un agradable paseo por el Paseo del Espolón, bordeado de árboles y bancos, y con vistas al río Arlanzón.",
@@ -94,6 +105,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800cab",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Museo de la Lengua Castellana",
     "descripcion": "Descubre la riqueza y la evolución del idioma castellano en este interesante museo ubicado en Burgos.",
@@ -102,6 +114,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800cac",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Mercado de Abastos de Burgos",
     "descripcion": "Sumérgete en la vida local de Burgos visitando su animado mercado de abastos, donde encontrarás productos frescos y tradicionales.",
@@ -110,6 +123,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800cad",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Ruta de Senderismo por el Cañón del Ebro",
     "descripcion": "Explora la belleza natural del Cañón del Ebro en una emocionante ruta de senderismo que te llevará a través de paisajes impresionantes.",
@@ -118,6 +132,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800cae",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Visita a los Pueblos del Valle de Valdebezana",
     "descripcion": "Recorre los pintorescos pueblos del Valle de Valdebezana y descubre su encanto rural, sus tradiciones y su rica historia.",
@@ -126,6 +141,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800caf",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Visita a los Monasterios del Valle de Manzanedo",
     "descripcion": "Descubre la espiritualidad y la historia de los monasterios del Valle de Manzanedo, joyas del arte románico en Burgos.",
@@ -134,6 +150,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800cb0",
     "provincia": "661cd0dbcab02767690bce6d",
     "nombre": "Avistamiento de Aves en el Parque Natural de las Hoces del Alto Ebro y Rudrón",
     "descripcion": "Observa la rica avifauna del Parque Natural de las Hoces del Alto Ebro y Rudrón en una experiencia de avistamiento de aves en plena naturaleza.",
@@ -142,6 +159,7 @@ const arrayActividades =[
     "comunidad": "Castilla y León"
   },
   {
+    "_id": "662d2741e3a35166e3800cb1",
     "nombre": "Catedral de Palencia",
     "img": "https://i.postimg.cc/TYnPFy5q/Catedral-de-Palencia.jpg",
     "descripcion": "Visita la hermosa Catedral de Palencia, un destacado ejemplo del arte gótico español con una rica historia y magnífica arquitectura.",
@@ -150,6 +168,7 @@ const arrayActividades =[
     "tipo": "ciudad"
   },
   {
+    "_id": "662d2741e3a35166e3800cb2",
     "nombre": "Plaza Mayor de Palencia",
     "img": "https://i.postimg.cc/JtV9jz1R/Plaza-Mayor-Palencia.jpg",
     "descripcion": "Disfruta de la atmósfera animada y la arquitectura histórica de la Plaza Mayor de Palencia, un lugar perfecto para relajarse y disfrutar de un café.",
@@ -158,6 +177,7 @@ const arrayActividades =[
     "tipo": "ciudad"
   },
   {
+    "_id": "662d2741e3a35166e3800cb3",
     "nombre": "Museo Diocesano de Palencia",
     "img": "https://i.postimg.cc/QCW2BTZ6/Museo-Diocesano-de-Palencia.jpg",
     "descripcion": "Explora la historia religiosa y el arte sacro en el Museo Diocesano de Palencia, que alberga una valiosa colección de obras de arte y artefactos religiosos.",
@@ -166,6 +186,7 @@ const arrayActividades =[
     "tipo": "ciudad"
   },
   {
+    "_id": "662d2741e3a35166e3800cb4",
     "nombre": "Monasterio de San Zoilo",
     "img": "https://i.postimg.cc/yNy7zm3d/Monasterio-de-San-Zoilo.jpg",
     "descripcion": "Visita el Monasterio de San Zoilo en la localidad de Carrión de los Condes, un impresionante complejo monástico con una rica historia y una arquitectura fascinante.",
@@ -174,6 +195,7 @@ const arrayActividades =[
     "tipo": "rural"
   },
   {
+    "_id": "662d2741e3a35166e3800cb5",
     "nombre": "Visita al Castillo de Fuentes de Valdepero",
     "img": "https://i.postimg.cc/mZzk3pbn/Visita-al-Castillo-de-Fuentes-de-Valdepero.jpg",
     "descripcion": "Descubre la historia medieval de la provincia explorando el Castillo de Fuentes de Valdepero, una impresionante fortaleza que se alza sobre la llanura castellana.",
@@ -182,6 +204,7 @@ const arrayActividades =[
     "tipo": "rural"
   },
   {
+    "_id": "662d2741e3a35166e3800cb6",
     "nombre": "Ruta de los Palacios de Palencia",
     "img": "https://i.postimg.cc/ZRgkKL2B/Ruta-de-los-Palacios-de-Palencia.jpg",
     "descripcion": "Recorre la ciudad de Palencia siguiendo la Ruta de los Palacios, que te llevará a través de los elegantes palacetes y edificios históricos de la ciudad.",
@@ -190,6 +213,7 @@ const arrayActividades =[
     "tipo": "ciudad"
   },
   {
+    "_id": "662d2741e3a35166e3800cb7",
     "nombre": "Visita a los Pueblos de la Ruta del Románico",
     "img": "https://i.postimg.cc/6pLNLn2g/Visita-a-los-Pueblos-de-la-Ruta-del-Rom-nico-Palencia.jpg",
     "descripcion": "Recorre los encantadores pueblos de la Ruta del Románico en Palencia, donde podrás admirar iglesias y ermitas románicas de gran belleza arquitectónica.",
@@ -198,6 +222,7 @@ const arrayActividades =[
     "tipo": "rural"
   },
   {
+    "_id": "662d2741e3a35166e3800cb8",
     "nombre": "Visita a la Reserva Natural de Fuentes Carrionas y Fuente Cobre de la Montaña Palentina ",
     "img": "_reserva_natural_fuentes_carrionas_palencia.jpg",
     "descripcion": "Descubre la belleza natural de la Reserva Natural de Fuentes Carrionas y Fuente Cobre-Montaña Palentina, hogar de una variada fauna y flora.",
@@ -1006,7 +1031,7 @@ const arrayActividades =[
   },
   {
     "_id": "661cfe313efab228a11f80af",
-    "nombre": "https://postimg.cc/PCxM64hZ",
+    "nombre": "Catedral de Oviedo",
     "img": "https://i.postimg.cc/pLQ1LG60/Catedral-de-Oviedo.jpg",
     "descripcion": "Visita la imponente Catedral de Oviedo, una obra maestra del arte gótico y uno de los principales símbolos de la ciudad, con su impresionante arquitectura y su rica historia.",
     "provincia": "661cd169cab02767690bce85",
