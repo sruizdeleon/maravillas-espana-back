@@ -7,7 +7,6 @@ const {
   buscarUsuarios,
   registrar,
   login,
-  cambiarUsuario,
   cambiarContrasena,
   borrarUsuario,
 } = require("../controllers/user.controller");
@@ -81,19 +80,6 @@ router.post("/login", async (req, res) => {
   }
 });
 
-/* 
-* Podremos modificar un usuario, estando loggeado como admin y  con el id del usuario a modificar. El formulario tendrá que tener el id del usuario a modificar, y el body: name, email, password y role.
-*/
-router.put("/:id", esAdmin, async (req, res) => {
-  try {
-    const usuarioModificado = await cambiarUsuario(req.params.id, req.body);
-    return res
-      .status(200)
-      .json({ msg: "el usurio ha sido modificado con exito", usuarioModificado });
-  } catch (error) {
-    res.status(500).json({ msg: "error interno del servidor" });
-  }
-});
 
 /* 
 * El usuario necesitará estar loggeado (dentro de su cuenta), para modificar su contraseña
@@ -120,7 +106,7 @@ router.patch(
 /*
  * En esta ruta introduciremos el id del usuario que se desea borrar mediante un input de formulario
  */
-router.delete("/:id", esAdmin, async (req, res) => {
+router.delete("/:id", estaAutenticado, async (req, res) => {
   try {
     const usuarioBorrado = await borrarUsuario(req.params.id);
     return res.status(200).json({ msg: "usuario eliminado: ", usuarioBorrado });

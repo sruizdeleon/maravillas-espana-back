@@ -6,7 +6,7 @@ const Actividad = require('../models/activity.model');
 
 const arrayActividades =[
   {
-    "_id": "662d2741e3a35166e3800ca0",
+    "_id": "662d2741e3a35166node ",
     "provincia": "661c09a6ab5c0cb25b8e9d7f",
     "nombre": "Catedral de León",
     "descripcion": "Contempla la impresionante arquitectura gótica de la Catedral de León, una de las más destacadas de España.",

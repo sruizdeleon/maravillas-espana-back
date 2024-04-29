@@ -43,25 +43,7 @@ async function login(email) {
   return usuarioEncontrado
 }
 
-/**
- * 
- * @param {*} id 
- * @param {*} usuario 
- * @returns nos devuelve el usuario modificado
- */
-async function cambiarUsuario(id, usuario) {
-    const modificacionUsuario = {
-      email: usuario.email,
-      password: await bcrypt.hash(usuario.password, 12),
-      role: usuario.role,
-      name: usuario.name,
-    };
-    const usuarioModificado = await User.findByIdAndUpdate(
-      id,
-      modificacionUsuario
-    );
-    return usuarioModificado;
-}
+
 
 /**
  * Controlador que modifica la contraseña del usuario encontrado por su Id.
@@ -94,7 +76,6 @@ module.exports = {
   buscarUsuarios,
   registrar,
   login,
-  cambiarUsuario,
   cambiarContrasena,
   borrarUsuario,
 };

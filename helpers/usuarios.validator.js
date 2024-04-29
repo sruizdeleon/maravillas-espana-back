@@ -21,7 +21,7 @@ function validarCambioContrasenia(body, hashPwd) {
     if (
       body.nuevaPassword !== undefined &&
       body.nuevaPassword !== "" &&  
-      (bcrypt.compare(body.password, hashPwd)) === true &&
+      (bcrypt.compare(body.password, hashPwd)) &&
       body.nuevaPassword === body.repetirNuevaPassword
     ) {
       return {
@@ -29,7 +29,7 @@ function validarCambioContrasenia(body, hashPwd) {
         mensaje: "la contraseña ha sido modificada con éxito",
       };
     } else if (
-      (bcrypt.compare(body.password, hashPwd)) === true &&
+      (bcrypt.compare(body.password, hashPwd)) &&
       body.nuevaPassword !== undefined &&
       body.nuevaPassword !== "" &&
       body.nuevaPassword !== body.repetirNuevaPassword
