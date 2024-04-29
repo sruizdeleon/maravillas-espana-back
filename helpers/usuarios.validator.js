@@ -1,5 +1,10 @@
 const bcrypt = require("bcrypt");
 
+/**
+ * Este validador confirma que las dos contraseñas de registro coinciden
+ * @param {*} body 
+ * @returns validación true o false y mensaje
+ */
 function validarContraseniasIguales(body){
   if(
     body.password !== undefined &&
@@ -17,6 +22,12 @@ function validarContraseniasIguales(body){
     }
   }
 }
+
+/**
+ * Este validador confirma que la contraseña es válida y la nueva contraseña coincide en los dos campos
+ * @param {*} body 
+ * @returns validación true o false y mensaje
+ */
 function validarCambioContrasenia(body, hashPwd) {
     if (
       body.nuevaPassword !== undefined &&
